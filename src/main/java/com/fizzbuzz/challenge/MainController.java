@@ -17,21 +17,21 @@ public class MainController {
         int x = 0;
         String storedNum = "";
 
-        do {
+        while (x <= 99) {
             //System.out.println("<p>" + x + "</p>" );
             x++;
 
             System.out.println(storedNum);
 
-            if (Integer.valueOf(x) % 3 ==0){
+            if ((Integer.valueOf(x) % 3 ==0) && (Integer.valueOf(x) % 5 ==0)){
+                storedNum += "FizzBuzz" + "<br/>";
+            }
+
+            else if (Integer.valueOf(x) % 3 ==0){
                 storedNum += "Fizz" + "<br/>";
             }
 
             else if (Integer.valueOf(x) % 5 ==0){
-                storedNum += "Buzz" + "<br/>";
-            }
-
-            else if ((Integer.valueOf(x) % 3 ==0) && (Integer.valueOf(x) % 5 ==0)){
                 storedNum += "Buzz" + "<br/>";
             }
 
@@ -41,7 +41,6 @@ public class MainController {
 
 
         }
-        while (x <= 100);
 
         System.out.println();
         return storedNum;

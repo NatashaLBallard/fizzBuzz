@@ -21,13 +21,16 @@ public class MainController {
             x++;
             System.out.println("\\n");
 
+
+
         }
+
         while (x <= 100);
-        {
-        int printFizzBuzz = x++;
+
+        int printFizzBuzz = x + x++;
         System.out.println();
-        return returnValue(printFizzBuzz);
-        }
+        return  ("ex" + printFizzBuzz);
+
 
     }
 }

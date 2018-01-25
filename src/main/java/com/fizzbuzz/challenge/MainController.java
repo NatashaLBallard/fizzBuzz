@@ -77,7 +77,7 @@ public class MainController {
 
 
         }
-        
+
         System.out.println();
         return (String.valueOf(multiples7)) ;
 

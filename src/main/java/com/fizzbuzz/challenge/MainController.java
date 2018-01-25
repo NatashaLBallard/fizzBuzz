@@ -15,21 +15,19 @@ public class MainController {
 
 
         int x = 0;
+        String storedNum = "";
 
         do {
-            System.out.println("<p>" + x + "</p>" );
+            //System.out.println("<p>" + x + "</p>" );
             x++;
-            System.out.println("\\n");
-
-
+            storedNum = String.valueOf((x));
+            System.out.println(storedNum);
 
         }
-
         while (x <= 100);
 
-        int printFizzBuzz = x + x++;
         System.out.println();
-        return  ("ex" + printFizzBuzz);
+        return  String.valueOf((x+1));
 
 
     }

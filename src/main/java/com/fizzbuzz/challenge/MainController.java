@@ -28,15 +28,15 @@ public class MainController {
             }
 
             else if (Integer.valueOf(x) % 5 ==0){
-                storedNum += "Buzz";
+                storedNum += "Buzz" + "<br/>";
             }
 
             else if ((Integer.valueOf(x) % 3 ==0) && (Integer.valueOf(x) % 5 ==0)){
-                storedNum += "Buzz";
+                storedNum += "Buzz" + "<br/>";
             }
 
-            else {
-                System.out.println(x + "<br/>");
+            else if ((Integer.valueOf(x) % 3 !=0) && (Integer.valueOf(x) % 5 !=0)){
+                storedNum += x + "<br/>";
             }
 
 

@@ -24,18 +24,21 @@ public class MainController {
             System.out.println(storedNum);
 
             if (Integer.valueOf(x) % 3 ==0){
-                System.out.println("Fizz");
                 storedNum += "Fizz" + "<br/>";
             }
 
             else if (Integer.valueOf(x) % 5 ==0){
-                System.out.println("Buzz");
                 storedNum += "Buzz";
             }
 
             else if ((Integer.valueOf(x) % 3 ==0) && (Integer.valueOf(x) % 5 ==0)){
-                System.out.println("FizzBuzz");
+                storedNum += "Buzz";
             }
+
+            else {
+                System.out.println(x + "<br/>");
+            }
+
 
         }
         while (x <= 100);

@@ -4,8 +4,11 @@ package com.fizzbuzz.challenge;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Scanner;
+
 @RestController
 public class MainController {
+
 
     @RequestMapping("/")
     public String fizzbuzz()
@@ -15,7 +18,12 @@ public class MainController {
         int x = 0;
         String storedNum = "";
 
-        while (x <= 99) {
+        double endValue = 0;
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter desired end value for the loop: ");
+        endValue = keyboard.nextDouble();
+
+        while (x <= endValue-1) {
             //System.out.println("<p>" + x + "</p>" );
             x++;
 
@@ -37,12 +45,10 @@ public class MainController {
                 storedNum += x + "<br/>";
             }
 
-
         }
 
         System.out.println();
         return storedNum;
-
 
     }
 }

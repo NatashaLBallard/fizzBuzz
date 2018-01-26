@@ -20,8 +20,9 @@ public class MainController {
         String multiples7 = "";
         String multiples17 = "";
         String multiples23 = "";
-        int counter = 0;
-
+        int counter7 = 0;
+        int counter17 = 0;
+        int counter27 = 0;
         double endValue = 0;
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter desired end value for the loop: ");
@@ -55,9 +56,14 @@ public class MainController {
                 x++;
 
                 if (Integer.valueOf(x) % 7 ==0){
-                    counter ++;
+                    counter7 ++;
                 }
-
+                if (Integer.valueOf(x) % 17 ==0){
+                    counter17 ++;
+                }
+                if (Integer.valueOf(x) % 27 ==0){
+                    counter27 ++;
+                }
 
             }
 
@@ -67,8 +73,7 @@ public class MainController {
 
 
         System.out.println();
-        System.out.println(String.valueOf(counter));
-        return storedNum;
+        return storedNum + "/br" + String.valueOf(counter7) + "/br" + String.valueOf(counter17) + "/br" + String.valueOf(counter27) ;
 
 
     }

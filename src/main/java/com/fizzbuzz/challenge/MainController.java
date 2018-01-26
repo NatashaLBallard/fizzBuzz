@@ -46,7 +46,7 @@ public class MainController {
 
         }
         System.out.println();
-        return storedNum + "<br>" + "End Value for Multiples Search: " + endValue + "<br>" + "Multiples of 7: " + String.valueOf(counter7) + "<br>" + "Multiples of 17: " + String.valueOf(counter17) + "<br>" + "Multiples of 23: " + String.valueOf(counter23);
+        return storedNum + "<br>" + "End Value for Multiples Search: " + endValue + "<br>" + "Multiples of 7: " + String.valueOf(counter7) + "<br>" + "Multiples of 17: " + String.valueOf(counter17) + "<br>" + "Multiples of 23: " + String.valueOf(counter23); 
 
     }
 
